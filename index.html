@@ -2,13 +2,17 @@
 <html>
 <head>
     <meta charset="utf-8">
-<title>インターネット普及について(理科の課題)</title>
-<script type="text/javascript">
-   function gate() {
-      var UserInput = prompt("PASSWORD:","");
-      location.href = UserInput + "index.html";
-   }
-</script>
+    <link rel="stylesheet" href="./togglePassword.css">
+    <script language="javascript" charset="utf-8" src="./blogTest.js"></script>
+  </head>
+  <body>
+    <input type="checkbox" id="checkPassword">
+    <div class="togglePassword">
+      <input type="password" class="hideText" value="password123">
+      <input type="text" class="showText" value="password123">
+      <label for="checkPassword" class="showLabel">表示</label>
+      <label for="checkPassword" class="hideLabel">非表示</label>
+    </div>
     
     <style>
         body {background-color: lightgreen}
